@@ -28,7 +28,7 @@ const ServiceSummary: React.FC = () => {
   }, []);
 
   return (
-    <section className="mt-20 px-10 overflow-hidden font-light leading-snug text-center mb-42 contact-text-responsive">
+    <section className="mt-20 px-20 overflow-hidden font-light leading-snug text-center mb-42 contact-text-responsive">
       <div id="title-service-1">
         <p>Architecture</p>
       </div>
