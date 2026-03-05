@@ -77,7 +77,7 @@ const AnimatedHeaderSection: React.FC<AnimatedHeaderSectionProps> = ({
               className={`flex flex-col pb-1 md:pb-2 gap-12 uppercase banner-text-responsive sm:gap-16 md:block ${textColor}`}
             >
               {titleParts.map((part, index) => (
-                <span className={index === 1 ? "ml-28 md:ml-4" : ""}  key={index}>{part} </span>
+                <span className={index === 1 ? "ml-38 md:ml-4" : ""}  key={index}>{part} </span>
               ))}
             </h1>
           </div>
