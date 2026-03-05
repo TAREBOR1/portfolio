@@ -91,7 +91,7 @@
   --color-primary: #e5e5e0;
   --color-DarkLava: #393632;
   --color-SageGray: #8b8b73;
-  --color-gold: #cfa355;
+ --color-gold: #cfa355;
   --font-amiamie: "Amiamie", sans-serif;
   --font-amiamie-round: "Amiamie-Round", sans-serif;
 
@@ -133,4 +133,6 @@ body {
 @utility contact-text-responsive {
   @apply text-[42px] sm:text-[52px] md:text-[62px] lg:text-[100px];
 }
-
+::-webkit-scrollbar{
+  @apply hidden
+}
