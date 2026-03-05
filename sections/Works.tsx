@@ -5,6 +5,7 @@ import { projects } from "../constants";
 import { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import ProjectDetails from "@/components/ProductDetails";
 
 type Project = {
   id: number;
@@ -22,6 +23,7 @@ const Works = () => {
   const previewRef = useRef<HTMLDivElement>(null);
 
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
+  const [selectedProject, setSelectedProject] = useState<any|null>(null);
   const text = `Featured projects that have been meticulously
     crafted with passion to drive
     results and impact.`;
@@ -148,11 +150,11 @@ const Works = () => {
             />
 
             {/* title */}
-            <div className="flex justify-between px-10 text-black transition-all duration-500 md:group-hover:px-12 md:group-hover:text-white">
+            <div onClick={() => setSelectedProject(project)} className="flex justify-between px-10 text-black transition-all duration-500 md:group-hover:px-12 md:group-hover:text-white">
               <h2 className="lg:text-[32px] text-[26px] leading-none">
                 {project.name}
               </h2>
-              <Icon icon="lucide:arrow-up-right" className="md:size-6 size-5" />
+              <Icon icon="lucide:arrow-up-right" className="md:size-6 size-5" onClick={() => setSelectedProject(project)} />
             </div>
             {/* divider */}
             <div className="w-full h-0.5 bg-black/80" />
@@ -196,6 +198,16 @@ const Works = () => {
           )}
         </div>
       </div>
+         {selectedProject && (
+  <ProjectDetails
+    title={selectedProject.name}
+    description={selectedProject.description}
+    image={selectedProject.image}
+    frameworks={selectedProject.frameworks}
+    href={selectedProject.href}
+    closeModal={() => setSelectedProject(null)}
+  />
+)}
     </section>
   );
 };

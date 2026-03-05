@@ -219,7 +219,7 @@ const Marquee: React.FC<MarqueeProps> = ({
       ref={containerRef}
       className={`overflow-hidden w-full h-20 md:h-25 flex items-center marquee-text-responsive font-light uppercase whitespace-nowrap ${className}`}
     >
-      <div className="flex">
+      <div className="flex w-max">
         {items.map((text, index) => (
           <span
             key={index}

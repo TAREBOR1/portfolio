@@ -14,12 +14,11 @@ const About: React.FC = () => {
 I build scalable, high-performance solutions
 from prototype to production`;
 
-  const aboutText = `Obsessed with building fast, intuitive apps—from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
-When I’m not shipping:
-⚡️ Open-sourcing my latest experiment (or hacking on yours)
-🎥 Teaching devs on Twitch/YouTube—because rising tides lift all ships
-🧗 Rock climbing (problem-solving with real stakes)
-🎸 Strumming chords while CI pipelines pass (multitasking at its finest)`;
+  const aboutText = `Obsessed with building fast, intuitive apps—from clean, pixel-perfect React interfaces to reliable backends. Just like in medicine, every detail matters, and every line of code should serve a real purpose.
+When I’m not building:
+🏊 Swimming — where focus and rhythm reset my mind
+🩺 Practicing medicine — solving real-world problems with care and precision
+⚡ Exploring new ideas and improving the tools people rely on every day`;
 
   const sectionRef = useRef<HTMLElement | null>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
@@ -73,7 +72,7 @@ When I’m not shipping:
       <div className="flex flex-col items-center justify-between gap-16 px-10 pb-16 text-xl font-light tracking-wide lg:flex-row md:text-2xl lg:text-3xl text-white/60">
         <img
           ref={imgRef}
-          src="/images/man.jpg"
+          src="/images/man.png"
           alt="man"
           className="w-md rounded-3xl"
         />

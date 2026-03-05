@@ -186,7 +186,7 @@ const Navbar: React.FC = () => {
       </nav>
 
       <div
-        className="fixed z-50 flex flex-col items-center justify-center gap-1 transition-all duration-300 bg-black rounded-full cursor-pointer w-14 h-14 md:w-20 md:h-20 top-4 right-10"
+           className="fixed z-50 flex flex-col items-center justify-center gap-1 transition-all duration-300 bg-black rounded-full cursor-pointer w-14 h-14 md:w-20 md:h-20 top-4 right-1 md:right-3"
         onClick={toggleMenu}
         style={{
           clipPath: showBurger
