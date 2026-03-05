@@ -66,8 +66,8 @@ const AnimatedHeaderSection: React.FC<AnimatedHeaderSectionProps> = ({
           ref={headerRef}
           className="flex flex-col justify-center gap-12 pt-16 sm:gap-16"
         >
-          <p
-            className={`text-sm font-light tracking-[0.5rem] uppercase px-10 ${textColor}`}
+           <p
+            className={` text-[10px] md:text-sm  font-light tracking-[0.1rem] md:tracking-[0.5rem] uppercase px-3 md:px-10 ${textColor}`}
           >
             {subTitle}
           </p>
